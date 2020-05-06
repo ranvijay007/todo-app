@@ -1,0 +1,102 @@
+.title {
+  text-align: center;
+  color: rgb(230, 216, 20);
+}
+form {
+  text-align: center;
+}
+.img {
+  text-align: center;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  animation: rotate infinite 4000ms linear;
+}
+form button {
+  width: 70px;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+form input {
+  height: 25px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 5px;
+}
+.change {
+  text-decoration: line-through;
+}
+body {
+  background-color: seagreen;
+}
+.note {
+  width: 50%;
+  background-color: rgb(224, 208, 196);
+  border-radius: 10px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 5px;
+  padding-top: 0.5px;
+}
+.note button {
+  width: 70px;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+.green {
+  background-color: rgb(8, 128, 8);
+}
+.green:hover {
+  background-color: rgb(24, 85, 24);
+}
+.red {
+  background-color: rgb(184, 11, 11);
+}
+.red:hover {
+  background-color: rgb(131, 26, 26);
+}
+.p {
+  margin: 10px;
+}
+.btn {
+  display: flex;
+  justify-content: space-around;
+  padding-right: 10px;
+}
+.left {
+  float: left;
+  width: 80%;
+  align-items: flex-start;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+@media screen and (max-width: 700px) {
+  .left {
+    float: none;
+  }
+  .note {
+    display: block;
+  }
+}
+
+@keyframes rotate {
+  form {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
